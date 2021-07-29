@@ -1,0 +1,21 @@
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: rs-flux
+  namespace: default
+  labels:
+    app: flux
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flux
+  template:
+    metadata:
+      labels:
+        app: flux
+    spec:
+      containers:
+      - name: flux
+        image: nginx:1.20-alpine
