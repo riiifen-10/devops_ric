@@ -18,4 +18,4 @@ spec:
     spec:
       containers:
       - name: flux
-        image: nginx:1.20-alpine
+        image: nginx:1.20.1-alpine
