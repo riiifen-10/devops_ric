@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: rs_flux
+  name: rs-flux
   namespace: default
   labels:
     app: flux
