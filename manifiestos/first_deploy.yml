@@ -1,8 +1,8 @@
 ---
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: rs-flux
+  name: flux-deployment
   namespace: default
   labels:
     app: flux
