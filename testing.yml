@@ -1,0 +1,21 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apps-flux
+  namespace: default
+  labels:
+    app: apps
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: apps
+  template:
+    metadata:
+      labels:
+        app: apps
+    spec:
+      containers:
+      - name: apps
+        image: nginx:1.20-alpine
