@@ -19,7 +19,7 @@ spec:
      containers:
      - name: simple-webapp-color
        image: kodekloud/webapp-color
-       args: ["--color", "blue"]
+       args: ["--color", "green"]
        ports:
        - containerPort: 8080
 
