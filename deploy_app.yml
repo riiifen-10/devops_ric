@@ -1,0 +1,21 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: desde-raiz
+  namespace: default
+  labels:
+    app: raiz
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: raiz
+  template:
+    metadata:
+      labels:
+        app: raiz
+    spec:
+      containers:
+      - name: raiz
+        image: nginx:1.20-alpine
